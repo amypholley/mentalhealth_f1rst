@@ -4,3 +4,11 @@ ul {
     gap: 50px;
     list-style: none;
 }
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background-color: aqua;
+    color: white;
+    font-size: 40px;
+}
