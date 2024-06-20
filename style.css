@@ -11,6 +11,16 @@ ul {
     font-display: white;
 }
 
+#one {
+    background-color: rgb(112, 228, 222);
+    font-size: large;
+    color: blueviolet;
+    text-align: left;
+    padding-right: auto;
+    margin-right: auto;
+    opacity: .9;
+}
+
 footer {
     display: flex;
     justify-content: center;
