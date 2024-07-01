@@ -5,10 +5,23 @@ ul {
     list-style: none;
     padding: 50px;
     text-align: center;
-    background-color: rgb(112, 228, 222);
+    background-color: rgb(110, 202, 198);
     color: white;
     font-size: medium;
     font-display: white;
+}
+
+#maincontainer {
+    display: grid;
+    grid-template-areas:  
+    "header header header header"
+    "title title . ."
+    "main main . side"
+    "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
 }
 
 h1 {
@@ -19,15 +32,35 @@ i {
     padding-left: 20px;
 }
 
+.title {
+    grid-area: title;
+    margin-bottom: auto;
+}
+
 #one {
-    background-color: rgb(112, 228, 222);
+    background-color: rgb(133, 63, 165);
     font-size: large;
-    color: rgb(133, 63, 165);
+    color: white;
     padding: 25px;
+    padding-left: 20px;
     text-align: left;
     padding-right: auto;
     margin-right: auto;
     opacity: .9;
+}
+
+div.a {
+    text-align: left;
+    grid-area: main;
+    margin-top: 10px;
+    padding: 25px;
+    padding-right: 750px;
+    margin-bottom: 600px;
+}
+
+div.footer {
+    grid-area: footer;
+    margin-top: 300px;
 }
 
 footer {
@@ -36,7 +69,7 @@ footer {
     gap: 50px;
     padding: 50px;
     text-align: left;
-    background-color: rgb(133, 63, 165);
+    background-color: rgb(110, 202, 198);
     color: white;
     font-size: medium;
     font-display: white;
